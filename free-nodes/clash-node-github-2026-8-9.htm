@@ -283,14 +283,19 @@ Clash的配置文件通常为YAML格式，您可以根据自己的需求选择�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的多路复用对短连接有何优势？</h5></div>
-    <div class="panel-body">
-        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接应用，如游戏和即时通讯，可提高吞吐量和连接稳定性，优化网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 与 Hiddify Next 有什么区别？</h5></div>
     <div class="panel-body">
         Nekobox 更注重轻量化和本地化，界面简洁，支持多协议基础功能；而 Hiddify Next 则整合了订阅转换、测速、规则分流等高级功能，更适合技术用户使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>QuantumultX 的广告屏蔽原理是什么？</h5></div>
+    <div class="panel-body">
+        QuantumultX 使用分流规则与脚本结合的方式实现广告屏蔽。通过重写 HTTP 请求和阻止特定域名，它能有效去除 App 内广告或网页弹窗，提升浏览体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何在 macOS 上运行 ClashX？</h5></div>
+    <div class="panel-body">
+        ClashX 是 macOS 平台专用客户端，用户可在 GitHub 下载 DMG 安装包。安装后导入订阅即可使用，支持系统代理集成、自动更新和延迟测试。界面简洁直观，深受苹果用户欢迎。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS Reality 模式与 XTLS 模式有何不同？</h5></div>
@@ -303,14 +308,14 @@ Clash的配置文件通常为YAML格式，您可以根据自己的需求选择�
         伪装域名必须真实可访问且证书有效，否则无法建立连接。正确配置可隐藏真实流量特征，降低被封锁和检测风险，提高节点安全性和长期可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 支持 Trojan 吗？</h5></div>
+    <div class="panel-heading"><h5>如何使用 Sing-box 配合 Clash Rules 实现精细分流？</h5></div>
     <div class="panel-body">
-        支持。Nekoray 基于 sing-box 核心，能兼容 Trojan、Vmess、Vless、Hysteria2 等多种协议。用户可在同一界面中管理和切换不同类型节点，非常方便。<hr />    </div>
+        将 Clash 的 rules 段提取出来转换为 Sing-box 的 routing 格式，或直接引用 rule-providers 源。Sing-box 的路由引擎支持更复杂的条件匹配，可结合 GeoIP 与 keyword 实现精细分流策略。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 的广告屏蔽原理是什么？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 的多路复用对短连接有何优势？</h5></div>
     <div class="panel-body">
-        QuantumultX 使用分流规则与脚本结合的方式实现广告屏蔽。通过重写 HTTP 请求和阻止特定域名，它能有效去除 App 内广告或网页弹窗，提升浏览体验。<hr />    </div>
+        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接应用，如游戏和即时通讯，可提高吞吐量和连接稳定性，优化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 节点订阅如何实现自动更新？</h5></div>
@@ -318,19 +323,14 @@ Clash的配置文件通常为YAML格式，您可以根据自己的需求选择�
         用户可添加订阅 URL，Nekoray 会定期自动下载并更新节点列表。保持节点最新可减少手动维护，提高节点可用性和网络连接稳定性，确保科学上网体验顺畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何使用 Sing-box 配合 Clash Rules 实现精细分流？</h5></div>
-    <div class="panel-body">
-        将 Clash 的 rules 段提取出来转换为 Sing-box 的 routing 格式，或直接引用 rule-providers 源。Sing-box 的路由引擎支持更复杂的条件匹配，可结合 GeoIP 与 keyword 实现精细分流策略。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 如何通过策略组优化科学上网？</h5></div>
     <div class="panel-body">
         PassWall2 结合策略组和节点延迟检测功能，可自动选择最佳节点处理网页、视频和游戏流量。无需手动干预，保证访问速度和网络稳定性，提高整体体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何在 macOS 上运行 ClashX？</h5></div>
+    <div class="panel-heading"><h5>Nekoray 支持 Trojan 吗？</h5></div>
     <div class="panel-body">
-        ClashX 是 macOS 平台专用客户端，用户可在 GitHub 下载 DMG 安装包。安装后导入订阅即可使用，支持系统代理集成、自动更新和延迟测试。界面简洁直观，深受苹果用户欢迎。    </div>
+        支持。Nekoray 基于 sing-box 核心，能兼容 Trojan、Vmess、Vless、Hysteria2 等多种协议。用户可在同一界面中管理和切换不同类型节点，非常方便。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -380,16 +380,16 @@ Clash的配置文件通常为YAML格式，您可以根据自己的需求选择�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/news/article-267692.htm" title="完全解析：如何选择和使用免费科学上网软件">完全解析：如何选择和使用免费科学上网软件</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-265518.htm" title="小米路由器解锁全球互联网：科学上网全攻略与深度体验">小米路由器解锁全球互联网：科学上网全攻略与深度体验</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-8-1.htm" title="高速VPN | 8月1日22.4M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐">高速VPN | 8月1日22.4M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-270303.htm" title="深入解析Surfboard代理组缺失问题：从原理到实战解决方案">深入解析Surfboard代理组缺失问题：从原理到实战解决方案</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-17-node-share.htm" title="高速VPN | 7月17日18.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点节点推荐">高速VPN | 7月17日18.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点节点推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-7-27-clash-node-github.htm" title="高速VPN | 7月27日20.9M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点节点推荐">高速VPN | 7月27日20.9M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-8-1.htm" title="高速VPN | 8月1日22.4M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐">高速VPN | 8月1日22.4M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-22-clash-verge-rev-node-share.htm" title="高速VPN | 7月22日22.3M/S|免费Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐">高速VPN | 7月22日22.3M/S|免费Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-node-github-2026-7-29.htm" title="高速VPN | 7月29日21.2M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点节点推荐">高速VPN | 7月29日21.2M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-30-clash-node-daily-updates.htm" title="高速VPN | 7月30日19.5M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/Shadowrocket节点/V2ray节点节点推荐">高速VPN | 7月30日19.5M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/Shadowrocket节点/V2ray节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-6-free-node-subscribe.htm" title="高速VPN | 8月6日20.4M/S|免费V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点节点推荐">高速VPN | 8月6日20.4M/S|免费V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-node-2026-8-7.htm" title="高速VPN | 8月7日19.4M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐">高速VPN | 8月7日19.4M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-node-github-2026-8-13.htm" title="高速VPN | 8月13日18.8M/S|免费Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点节点推荐">高速VPN | 8月13日18.8M/S|免费Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点节点推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/clash-node-github-2026-8-9.htm" title="高速VPN | 8月9日22.9M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐">高速VPN | 8月9日22.9M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-16-clash-meta-github.htm" title="高速VPN | 7月16日21.9M/S|免费Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点节点推荐">高速VPN | 7月16日21.9M/S|免费Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点节点推荐</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-271604.htm" title="从链接到配置：一步步教你将VMess在线转换为Clash配置的终极指南">从链接到配置：一步步教你将VMess在线转换为Clash配置的终极指南</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-windows-2026-8-11.htm" title="高速VPN | 8月11日21.5M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐">高速VPN | 8月11日21.5M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-windows-2026-8-3.htm" title="高速VPN | 8月3日20.5M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点节点推荐">高速VPN | 8月3日20.5M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点节点推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -401,13 +401,10 @@ Clash的配置文件通常为YAML格式，您可以根据自己的需求选择�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">18</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">31</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">9</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
             </li>
                     </ul>
     </div>
